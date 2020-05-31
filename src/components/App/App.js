@@ -1,18 +1,16 @@
 import React from "react";
 
 const App = () => {
+  const introTitle = "About Me";
   return (
     <div>
       <h1> Dorine Ketchiozo </h1>
-      <h2> About Me</h2>
+      <h2> {introTitle} </h2>
       <div>
-        <div> </div>
         <div>
-         
           <p>
-            
-            I am a passionate, innovative, experienced and hardworking Web
-            Developer, with extensive experience in website management. I
+            I am a passionate, innovative, experienced and hardworking
+            WebDeveloper, with extensive experience in website management. I
             recently graduated from the UNC Charlotte Full Stack Coding
             Bootcamp. I have acquired coding skills in HTML, CSS, Javascript,
             JQuery, Node, React, MySQL, NoSQL, MongoDB, Bootstrap, Material-UI,
