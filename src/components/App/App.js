@@ -1,32 +1,25 @@
-import React, {useState, useEffect} from "react";
-import TextOutput from "../TextOutput";
-import ImageCard from "../ImageCard";
-import ContactCard from "../ContactCard";
-
+import React, { useState, useEffect } from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import Home from "../Home";
+import NavBar from "../NavBar";
+import About from "../About";
+import Contact from "../Contact";
+import Footer from "../Footer"
 
 const App = () => {
-  const [contacts, setContacts] = useState([]);
-
-  useEffect( () =>  {fetch("https://randomuser.me/api/?results=3")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      setContacts(data.results);
-    });}, []);
 
   return (
-    <div>
-      <ImageCard />
-      <TextOutput />
-      {contacts.map((contact) => (
-        <ContactCard
-          avatar={contact.picture.large}
-          name={contact.name.first + ' ' + contact.name.last}
-          email={contact.email}
-          age={contact.dob.age}
-        />
-      ))}
-    </div>
+    <Router>
+      <div>
+        <NavBar />
+        <Route exact path="/"> component= {Home} </Route>
+        <Route path="/about"> component= {About} </Route>
+        <Route path="/portfolio"> component= {Portfolio} </Route>
+        <Route path="/contact"> component= {Contact} </Route>
+        <Footer />
+      </div>
+
+    </Router>
   );
 };
 
