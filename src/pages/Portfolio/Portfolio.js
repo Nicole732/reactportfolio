@@ -14,6 +14,7 @@ export default class Portfolio extends Component {
         <div>
             <h1>Languages and Technologies Proficiency</h1>
             <button> View </button>
+            <LanguagesDisplay />
             
 
         </div>
