@@ -10,19 +10,20 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/*  <Router>
-        //<div>
-        //<NavBar /> 
-          //<Route exact path="/"> component= {About} </Route>
-         // <Route path="/about"> component= {About} </Route>
-          //<Route path="/portfolio"> component= {Portfolio} </Route>
-         //<Route path="/contact"> component= {Contact} </Route>
-         // <Footer /> 
-         // </div>
-         //</Router> */}
-        <About />
-        <Portfolio />
-      </div>
+        {/* <Router>
+         <div>
+         //<NavBar /> 
+          <Route exact path="/"> component={About} </Route>
+          <Route exact path="/about"> component={About} </Route>
+          <Route exact path="/portfolio"> component= {Portfolio} </Route>
+         //<Route exact path="/contact"> component={Contact} </Route>
+          <Footer /> 
+          </div>
+          </Router> */}
+          <About />
+          <Portfolio />
+      
+    </div>
     );
   }
 }

@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-export default function LanguagesDisplay() {
+
+
+function LanguagesDisplay() {
     return (
         <div>
-            <img />
+            <h1>Programing Languages and their Proficiency</h1>
             
         </div>
     )
 }
+
+export default LanguagesDisplay;
