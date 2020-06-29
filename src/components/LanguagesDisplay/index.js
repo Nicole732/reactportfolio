@@ -2,11 +2,11 @@ import React from 'react';
 
 
 
-function LanguagesDisplay() {
+const LanguagesDisplay = (props) => {
     return (
         <div>
-            <h1>Programing Languages and their Proficiency</h1>
-            
+            <p> {props.name}</p>
+            <p> {props.proficiency}</p>
         </div>
     )
 }
