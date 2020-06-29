@@ -9,7 +9,9 @@ import {nodejs736399 as nodejs} from "../../images/nodejs736399640.png"
 const ImageCard = (props) => {
   return (
     <div>
-      {/* <img src={smaller} alt ="portrait" width ="300" height ="350"/> */}
+      {/* <img src={smaller} alt ="portrait" width ="300" height ="350"/> 
+      Need of a ternary to change the image source based on props - name provided*/}
+
 
       <img src = {logo2582748640} alt = {props.name} width ="400" height ="450"/>
 
