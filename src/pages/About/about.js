@@ -1,10 +1,10 @@
 import React from "react";
 
 const About = () => {
-  const introTitle = "About Me";
+  const introTitle = "Full Stack Web Developer";
   return (
     <div>
-      <h1> Dorine Ketchiozo </h1>
+      <h1> About Me </h1>
       <h2> {introTitle} </h2>
       <div>
         <div>
