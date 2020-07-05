@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
-import NavBar from "../NavBar";
+import NavBar from "../NavBar/index";
 import Homepage from '../../pages/Homepage';
 import About from "../../pages/About/About";
-import Contact from "../Contact";
+import Contact from "../../pages/Contact/Contact";
 import Footer from "../Footer";
 import Portfolio from "../../pages/Portfolio/Portfolio";
 
@@ -13,7 +13,7 @@ class App extends Component {
       <div>
          <Router>
          <div>
-         {/* <NavBar */}
+          <NavBar />
           <Route exact path="/" component={Homepage} />       
           <Route exact path="/about"  component={About} />  
           <Route exact path="/portfolio" component={Portfolio} />  
